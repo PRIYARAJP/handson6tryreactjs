@@ -9,6 +9,7 @@ import store from "./scomponent";
 import NewStudent from "./newstudent";
 import EditStudent from "./EditStudent";
 
+
 function Routerof() {
   const [data, setData] = useState([
     {name: "John", Age: 24, Course: "MERN", Batch: "October"},
