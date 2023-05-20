@@ -1,15 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./homepage";
-import './reduce.css';
-import Contact from "./contact";
-import Student from "./STUDENTSSSSSSS";
-import store from "./scomponent";
-import NewStudent from "./newstudent";
-import EditStudent from "./EditStudent";
+import Home from "./LINKS/homepage";
+// import './reduce.css';
+import Contact from "./LINKS/contact";
+import Student from "./LINKS/STUDENTSSSSSSS";
+import store from "./LINKS/scomponent";
+import NewStudent from "./LINKS/newstudent";
+import EditStudent from "./LINKS/EditStudent";
 
-
+// import Nav from "./LINKS/links";
+// import Navup from "./Navup";  
 function Routerof() {
   const [data, setData] = useState([
     {name: "John", Age: 24, Course: "MERN", Batch: "October"},
@@ -25,7 +26,11 @@ function Routerof() {
   ])
    return (<> 
 <span className="App">
+
       <header className="App-header">
+{/* <Nav></Nav> */}
+{/* <Navup></Navup> */}
+
        <BrowserRouter>
     <Routes>  
       <Route path='/'element={<Home />}/>

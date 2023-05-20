@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
-import Routerof from './LINKS/Reduce';
+import App from './App';
+// import { HashRouter as Router } from "react-router-dom";
+// import Routerof from './Reduce';
 import reportWebVitals from './reportWebVitals';
+// import Nav from './LINKS/links';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <React.StrictMode>
-    {/* <App /> */}
-    <Routerof/>
-  </React.StrictMode>
+       {/* <Nav></Nav> */}
+    <App />
+    {/* <Routerof/> */}
+
+   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
